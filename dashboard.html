@@ -1,0 +1,7 @@
+{% include 'app.html' %}
+
+{% block content %}
+<h2>Dashboard:{{ request.user.username }}</h2>
+<a href= "{% url 'logout' %}" class="btn btn-dark" >Logout</a>
+
+{% endblock content %}
